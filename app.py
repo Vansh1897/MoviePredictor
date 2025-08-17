@@ -77,4 +77,4 @@ if st.button("🔎 Recommend"):
 
 # Footer
 st.markdown("---")
-st.caption("Built with ❤️ using Streamlit")
+
