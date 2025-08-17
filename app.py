@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # ---------------------------
 @st.cache_data
 def load_data():
-    data = pd.read_csv("data.csv.txt", sep=",")
+    data = pd.read_csv("https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata")
     cv = CountVectorizer()
     count_matrix = cv.fit_transform(data['comb'])
     sim = cosine_similarity(count_matrix)
